@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hk.hku.cs.othello.VersusActivity"
+    android:background="@drawable/background_versus">
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/black_star"
+        android:id="@+id/img_BlackStar" />
+
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/white_star"
+        android:id="@+id/img_WhiteStar" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_BlackStar"
+        android:orientation="vertical"
+        android:id="@+id/player1Info"
+        >
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+            android:id="@+id/text_Player1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting..."
+            android:id="@+id/txt_player1Name"
+            android:textColor="#FFA500"
+            />
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="READY!"
+            android:id="@+id/txt_ready1"
+            android:textColor="#FFA500"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_BlackStar"
+        android:orientation="vertical"
+        android:id="@+id/player2Info"
+        >
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 2"
+            android:id="@+id/text_Player2"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watiing..."
+            android:id="@+id/txt_player2Name"
+            android:textColor="#FFA500"
+            />
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ready2"
+            android:textColor="#FFA500"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

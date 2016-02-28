@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#800000"
+        >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="15dp"
+            android:text="Player"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="15dp"
+            android:text="Opposite"
+            android:textAlignment="viewEnd"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="15dp"
+            android:text="Result"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="15dp"
+            android:text="Turn"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="15dp"
+            android:text="Scores"
+            android:textSize="10dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/record_name"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:textColor="#FF7300"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/record_opposite"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/record_result"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/record_turn"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/record_scores"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

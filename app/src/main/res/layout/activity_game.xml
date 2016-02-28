@@ -1,0 +1,868 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_game"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_newGame"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:text="New Game"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_surrender"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Surrender"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_chessboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn00"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn00"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn01"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn02"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn02"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn03"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn03"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn04"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn04"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn05"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn05"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn06"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn06"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn07"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn07"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn10"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn11"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn12"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn13"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn14"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn14"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn15"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn16"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn16"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn17"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn17"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn20"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn20"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn21"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn21"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn22"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn22"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn23"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn23"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn24"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn25"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn25"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn26"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn26"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn27"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn27"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn30"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn30"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn31"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn31"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn32"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn32"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn33"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn33"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn34"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn34"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn35"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn35"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn36"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn36"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn37"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:background="@drawable/cell"
+                android:tag="imgbtn37"
+                android:scaleType="centerInside"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn40"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn40"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn41"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn41"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn42"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn42"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn43"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn43"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn44"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn44"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn45"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn45"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn46"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn46"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn47"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn47"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn50"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn50"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn51"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn51"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn52"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn52"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn53"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn53"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn54"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn54"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn55"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn55"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn56"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn56"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn57"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn57"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn60"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn60"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn61"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn61"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn62"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn62"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn63"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn63"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn64"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn64"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn65"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn65"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn66"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn66"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn67"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn67"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+        <TableRow>
+            <ImageButton
+                android:id="@+id/imgbtn70"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn70"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn71"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn71"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn72"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn72"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn73"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn73"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn74"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn74"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn75"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn75"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn76"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn76"
+                android:scaleType="centerInside"
+
+                android:background="@drawable/cell"
+
+                android:onClick="onButtonClick"/>
+            <ImageButton
+                android:id="@+id/imgbtn77"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transparent"
+                android:tag="imgbtn77"
+                android:scaleType="centerInside"
+                android:background="@drawable/cell"
+
+
+                android:onClick="onButtonClick"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_chessboard"
+        android:id="@+id/linearlayout_info"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/img_BlackGrade"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/black_chess"/>
+        <TextView
+            android:id="@+id/textview_BlackGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 2"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+
+        <ImageView
+            android:id="@+id/imgview_turn"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/black_chess"/>
+
+        <TextView
+            android:id = "@+id/textview_Turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        <ImageView
+            android:id="@+id/img_WhiteGrade"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/white_chess"/>
+        <TextView
+            android:id="@+id/textview_WhiteGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 2"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_info"
+        android:id="@+id/player1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtView_player1"
+            android:text="Xie Yan"
+            android:textColor="@color/color_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_info"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtView_player2"
+            android:text="Shuihan"
+            android:textColor="@color/color_white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_hintsOn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:text="hints on"
+        android:textSize="15dp"
+        android:layout_below="@+id/linearlayout_info"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_below="@+id/btn_hintsOn"
+        android:layout_marginTop="10dp"
+        android:background="#800000"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/txt_counter"
+            android:textSize="43dp"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
